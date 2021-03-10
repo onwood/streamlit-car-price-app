@@ -15,6 +15,10 @@ def main():
     X = df.iloc[ : , 3:-2+1]
     y = df['Car Purchase Amount']    
 
+    if choice == 'Home':
+        st.title('차량 구매액을 예측하는 앱')
+        st.image('https://img1.daumcdn.net/thumb/R720x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fliveboard%2Fchutcha%2Fac86653be843413a8ac15e6f53938582.JPG')
+    
     if choice == 'Data':
         st.title('사용된 데이터 확인')
         columns = X.columns
