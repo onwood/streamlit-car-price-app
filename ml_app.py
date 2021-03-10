@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 def run_ml_app():
     st.title('차량 구매액 예측')
-    st.write('성별(Gender), 연령(Age), 연봉(Annual Salary), 카드빚(Credit Card Debt), 순자산(net worth)을 직접 입력해서 차량 구매액을 예측해보세요.')
+    st.write('성별(Gender), 연령(Age), 연봉(Annual Salary), 카드빚(Credit Card Debt), 순자산(Net Worth)을 직접 입력해서 차량 구매액을 예측해보세요.')
     df = pd.read_csv('data/Car_Purchasing_Data.csv', encoding='ISO-8859-1')
     X = df.iloc[ : , 3:-2+1]
     y = df['Car Purchase Amount']
