@@ -40,4 +40,4 @@ def run_ml_app():
     new_data_pred = model.predict(new_data)
     predicted_data_final = sc_y.inverse_transform(new_data_pred)
     if st.button('결과'):
-        st.write('예측 값은 {:,.2f}입니다.'.format(predicted_data_final[0,0]))
+        st.write('예측 값은 {:,.2f}$입니다.'.format(predicted_data_final[0,0]))
